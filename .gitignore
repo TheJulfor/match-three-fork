@@ -1,0 +1,94 @@
+# Файлы сборки и исполняемые файлы
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Xx]64/
+[Xx]86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]uild/
+[Bb]uilds/
+[Oo]bj/
+[Oo]bj/
+[Oo]ut/
+bin/
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+*.app
+
+# Файлы Visual Studio
+.vs/
+.vscode/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.sdf
+*.opensdf
+*.db
+*.opendb
+*.VC.db
+*.VC.opendb
+*.suo
+*.ipch
+*.aps
+*.ncb
+*.user
+*.tlog
+*.log
+*.idb
+*.pdb
+*.ipdb
+*.iobj
+*.pch
+*.res
+*.ilk
+*.meta
+*.manifest
+
+# Файлы CMake
+[Cc]make/
+[Cc]ache/
+*.cmake
+!CMakeLists.txt
+Makefile
+*.cmake
+
+# Файлы отладки
+*.pdb
+*.idb
+*.ilk
+
+# Резервные копии и временные файлы
+*~
+*.swp
+*.swo
+*.*~
+*.bak
+*.tmp
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Документация
+*.pdf
+*.doc
+*.docx
+
+# Логи
+*.log
+
+
+
+
+
+
+
