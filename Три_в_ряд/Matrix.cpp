@@ -1,4 +1,5 @@
 ﻿#include <windows.h>
+
 #include <iostream>
 #include <vector>
 
@@ -12,7 +13,8 @@ void SetColor(int colorCode) {
 // функция для сброса цвета текста
 void ResetColor() {
   HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-  SetConsoleTextAttribute(hConsole, 7);  // делает белый цвет по дефолту, что другое не было цветным
+  SetConsoleTextAttribute(
+      hConsole, 7);  // делает белый цвет по дефолту, что другое не было цветным
 }
 
 // функция для вывода цветных символов
@@ -49,7 +51,9 @@ void Generate_Board(std::vector<std::vector<char>>& board) {
 // просто вывод c небольшим дизайном
 void Show_Board(std::vector<std::vector<char>> board, int score) {
   std::cout << "\n=== ТРИ В РЯД ===" << '\n';
-  std::cout << "--- Текущий счет: " << score << " ---" << '\n' << '\n' << "     ";
+  std::cout << "--- Текущий счет: " << score << " ---" << '\n'
+            << '\n'
+            << "     ";
   for (int i = 1; i < 9; i++) {
     std::cout << i << "  ";
   }
@@ -76,22 +80,23 @@ void Show_Board(std::vector<std::vector<char>> board, int score) {
 void MurMiau() {
   int flag = 1;
   int tmp = 1;
-  while (flag==1) {
+  while (flag == 1) {
     if (tmp == 1) {
       SetConsoleOutputCP(65001);
       std::cout << ">^˶ω˶^<" << std::endl;
       tmp++;
       std::cout << "Ещё один? (1 - да, 0 - нет)" << std::endl;
       std::cin >> flag;
-    }
-    else if (tmp == 2) {
-      std::cout << "\xE2\x82\x8D\xCB\x84;\xCB\x95;\xCB\x84\xE2\x82\x8E" << std::endl;
+    } else if (tmp == 2) {
+      std::cout << "\xE2\x82\x8D\xCB\x84;\xCB\x95;\xCB\x84\xE2\x82\x8E"
+                << std::endl;
       tmp++;
       std::cout << "Ещё один? (1 - да, 0 - нет)" << std::endl;
       std::cin >> flag;
-    }
-    else if (tmp == 3) {
-      std::cout << "\xE2\x82\x8D\xCB\x84\xCB\xB6\xE1\xB5\x94 \xE1\xB5\x95 \xE1\xB5\x94\xCB\xB6\xCB\x84\xE2\x82\x8Emeow" << std::endl;
+    } else if (tmp == 3) {
+      std::cout << "\xE2\x82\x8D\xCB\x84\xCB\xB6\xE1\xB5\x94 \xE1\xB5\x95 "
+                   "\xE1\xB5\x94\xCB\xB6\xCB\x84\xE2\x82\x8Emeow"
+                << std::endl;
       tmp = 1;
       std::cout << "Ещё один? (1 - да, 0 - нет)" << std::endl;
       std::cin >> flag;
