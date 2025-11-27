@@ -1,0 +1,102 @@
+# =============================================================================
+# AUTOMATIC TEXT HANDLING
+# =============================================================================
+
+# Все файлы считаем текстовыми и применяем авто-определение
+* text=auto
+
+# =============================================================================
+# EXPLICIT ENCODING FOR TEXT FILES
+# =============================================================================
+
+# Исходный код - всегда UTF-8
+*.cpp text encoding=utf-8
+*.h text encoding=utf-8
+*.hpp text encoding=utf-8
+*.c text encoding=utf-8
+*.cs text encoding=utf-8
+*.java text encoding=utf-8
+*.py text encoding=utf-8
+*.js text encoding=utf-8
+*.ts text encoding=utf-8
+*.php text encoding=utf-8
+*.rb text encoding=utf-8
+
+# Конфигурационные файлы
+*.json text encoding=utf-8
+*.xml text encoding=utf-8
+*.config text encoding=utf-8
+*.yml text encoding=utf-8
+*.yaml text encoding=utf-8
+*.toml text encoding=utf-8
+
+# Документация
+*.md text encoding=utf-8
+*.txt text encoding=utf-8
+*.rst text encoding=utf-8
+*.html text encoding=utf-8
+*.css text encoding=utf-8
+
+# Скрипты
+*.sh text encoding=utf-8
+*.bat text encoding=utf-8
+*.ps1 text encoding=utf-8
+
+# =============================================================================
+# LINE ENDINGS (Переносы строк)
+# =============================================================================
+
+# Для Windows файлов - принудительно CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Для всех остальных текстовых файлов - LF (Unix style)
+*.cpp text eol=lf
+*.h text eol=lf
+*.cs text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
+# =============================================================================
+# BINARY FILES (Не трогать!)
+# =============================================================================
+
+# Изображения
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.bmp binary
+*.svg binary
+
+# Исполняемые файлы и библиотеки
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+
+# Архивы
+*.zip binary
+*.rar binary
+*.tar binary
+*.gz binary
+
+# Документы
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+
+# =============================================================================
+# DIFF & MERGE SETTINGS
+# =============================================================================
+
+# Как показывать diff для бинарных файлов
+*.pdf diff=pdf
+*.png diff=image
+*.jpg diff=image
+
+# Специальные обработчики
+*.cs diff=csharp
