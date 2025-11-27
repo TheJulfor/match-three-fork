@@ -1,34 +1,34 @@
-#include <windows.h>
+п»ї#include <windows.h>
 
 #include <iostream>
 #include <vector>
 
-// ставит цвет
+// СЃС‚Р°РІРёС‚ С†РІРµС‚
 void SetColor(int colorCode) {
   HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
   SetConsoleTextAttribute(hConsole, colorCode);
 }
-// функция для сброса цвета текста
+// С„СѓРЅРєС†РёСЏ РґР»СЏ СЃР±СЂРѕСЃР° С†РІРµС‚Р° С‚РµРєСЃС‚Р°
 void ResetColor() {
   HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
   SetConsoleTextAttribute(
-      hConsole, 7);  // делает белый цвет по дефолту, что другое не было цветным
+      hConsole, 7);  // РґРµР»Р°РµС‚ Р±РµР»С‹Р№ С†РІРµС‚ РїРѕ РґРµС„РѕР»С‚Сѓ, С‡С‚Рѕ РґСЂСѓРіРѕРµ РЅРµ Р±С‹Р»Рѕ С†РІРµС‚РЅС‹Рј
 }
 
-// функция для вывода цветных символов
+// С„СѓРЅРєС†РёСЏ РґР»СЏ РІС‹РІРѕРґР° С†РІРµС‚РЅС‹С… СЃРёРјРІРѕР»РѕРІ
 void PrintColoredSymbol(char symbol) {
   switch (symbol) {
     case 'X':
-      SetColor(14);  // желтый
+      SetColor(14);  // Р¶РµР»С‚С‹Р№
       break;
     case 'O':
-      SetColor(12);  // красный
+      SetColor(12);  // РєСЂР°СЃРЅС‹Р№
       break;
     case '#':
-      SetColor(10);  // зеленый
+      SetColor(10);  // Р·РµР»РµРЅС‹Р№
       break;
     default:
-      SetColor(7);  // белый для других символов
+      SetColor(7);  // Р±РµР»С‹Р№ РґР»СЏ РґСЂСѓРіРёС… СЃРёРјРІРѕР»РѕРІ
       break;
   }
   std::cout << symbol;

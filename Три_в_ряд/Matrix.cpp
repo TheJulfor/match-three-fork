@@ -1,4 +1,4 @@
-#include <windows.h>
+п»ї#include <windows.h>
 
 #include <ctime>
 #include <iostream>
@@ -15,10 +15,10 @@ void Generate_Board(std::vector<std::vector<char>>& board) {
     }
   }
 }
-// просто вывод c небольшим дизайном
+// РїСЂРѕСЃС‚Рѕ РІС‹РІРѕРґ c РЅРµР±РѕР»СЊС€РёРј РґРёР·Р°Р№РЅРѕРј
 void Show_Board(std::vector<std::vector<char>> board) {
-  std::cout << "=== ТРИ В РЯД ===" << '\n';
-  std::cout << "Счет: пока нет" << '\n' << '\n' << "     ";  // потом добавим
+  std::cout << "=== РўР Р Р’ Р РЇР” ===" << '\n';
+  std::cout << "РЎС‡РµС‚: РїРѕРєР° РЅРµС‚" << '\n' << '\n' << "     ";  // РїРѕС‚РѕРј РґРѕР±Р°РІРёРј
   for (int i = 1; i < 9; i++) {
     std::cout << i << "  ";
   }
