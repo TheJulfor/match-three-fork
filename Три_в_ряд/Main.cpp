@@ -9,23 +9,6 @@
 
 const int BOARD_SIZE = 8;
 
-<<<<<<< HEAD
-    Generate_Board(board);
-    Show_Board(board);
-}
-#include <windows.h>
-#include <Windows.h>
-
-#include <ctime>
-#include <iostream>
-#include <vector>
-
-#include "Matrix_Header2.h"
-
-const int BOARD_SIZE = 8;
-
-=======
->>>>>>> 547c31294070f54c3758e623d26af8af4a7f0c4b
 int main() {
   SetConsoleCP(1251);
   SetConsoleOutputCP(1251);
