@@ -1,8 +1,6 @@
-#ifndef MANAGEMENT_HEADER
-#define MANAGEMENT_HEADER
+#pragma once
+#include <vector>
 
-void SetColor(int);
-void ResetColor();
-void PrintColoredSymbol(char);
-
-#endif  // !MANAGEMENT_HEADER
+int number_of_winning_cells(std::vector<std::vector<char>> board);
+void generation_of_new_cells(std::vector<std::vector<char>>& board, bool& gen);
+void win_comb(std::vector<std::vector<char>>& board);
